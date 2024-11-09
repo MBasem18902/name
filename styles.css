@@ -1,0 +1,151 @@
+body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f3;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            .main-text {
+                text-align: center;
+                margin-top: 20px;
+                padding: 0 20px;
+            }
+
+            .main-text h2 {
+                font-size: 1.2em;
+                color: #555;
+                margin: 0;
+            }
+
+            .main-text h1 {
+                font-size: 2em;
+                color: #333;
+                margin: 10px 0 20px;
+                font-weight: bold;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 600px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+.card {
+    width: 100%;
+    padding: 15px 15px;
+    gap: 32px;
+    background-color: #eaf8f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 2px solid #3cab90; /* زيادة سمك الخط */
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: opacity 0.5s ease;
+}
+
+.card h3 {
+    font-size: 22px; /* زيادة حجم الخط */
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    padding: 0 24px;
+}
+
+.card .count {
+    font-size: 16px; /* زيادة حجم الخط داخل العدادات */
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+    padding: 0 24px;
+}
+
+.card p {
+    font-size: 20px; /* زيادة حجم الخط في الفقرات */
+    color: #333; /* لون الخط */
+    margin: 10px 0;
+    line-height: 1.5; /* تحسين التباعد بين الأسطر */
+    padding: 0 24px; /* إضافة حشوة للتباعد مع الجوانب */
+}
+
+
+            .button {
+                font-size: 14px;
+                color: #3cab90;
+                font-weight: bold;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                margin-top: 10px;
+                padding: 0 24px 20px 24px;
+            }
+
+            .button:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 768px) {
+    .main-text h1 {
+        font-size: 1.5em; /* تصغير الخط في العنوان */
+    }
+
+    .main-text h2 {
+        font-size: 1em; /* تصغير حجم الخط */
+    }
+
+    .card {
+        padding: 10px; /* تقليل الحشوة داخل الكارد */
+    }
+
+    .card h3 {
+        font-size: 20px; /* تقليل حجم العنوان داخل الكارد */
+    }
+
+    .card .count, .card p {
+        font-size: 14px; /* تقليل حجم النص داخل الكارد */
+    }
+
+    .container {
+        padding: 10px; /* تقليل الحشوة داخل الحاوية */
+    }
+
+    .button {
+        font-size: 12px; /* تقليل حجم النص في الأزرار */
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .main-text h1 {
+        font-size: 1.2em; /* تصغير الخط أكثر في العنوان */
+    }
+
+    .card {
+        padding: 8px; /* تقليل الحشوة داخل الكارد */
+    }
+
+    .card h3 {
+        font-size: 18px; /* تقليل حجم العنوان داخل الكارد */
+    }
+
+    .card .count, .card p {
+        font-size: 12px; /* تقليل حجم النص داخل الكارد */
+    }
+
+    .container {
+        padding: 5px; /* تقليل الحشوة داخل الحاوية */
+    }
+
+    .button {
+        font-size: 10px; /* تقليل حجم النص في الأزرار */
+    }
+}
